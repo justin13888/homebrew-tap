@@ -1,25 +1,25 @@
 class Purr < Formula
-  desc "Fast, featureful, cross-platform fetching tool written in Rust "
+  desc "Fast, featureful, cross-platform fetching tool written in Rust"
   homepage "https://github.com/justin13888/purrfetch"
-  version "1.0.0"
+  version "1.0.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/justin13888/purrfetch/releases/download/v1.0.0/purrfetch-aarch64-apple-darwin.tar.xz"
-      sha256 "f94c6c5400fa62848c57684063d1366218e99f7de7f97186bc3d8e5baf36c818"
+      url "https://github.com/justin13888/purrfetch/releases/download/v1.0.1/purrfetch-aarch64-apple-darwin.tar.xz"
+      sha256 "9bb063b693e49dac540662f42e1fe8cfafd5572b38c0a31b2dd9018ce37a9f4f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/justin13888/purrfetch/releases/download/v1.0.0/purrfetch-x86_64-apple-darwin.tar.xz"
-      sha256 "ba1ff21281939ba6151151273df74dc7b6e7fd15d36bf8671beff7228ae85e7e"
+      url "https://github.com/justin13888/purrfetch/releases/download/v1.0.1/purrfetch-x86_64-apple-darwin.tar.xz"
+      sha256 "78028ed836049833919dd03031750b2ad35e59fa936fe7c6bb752653a5caf520"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/justin13888/purrfetch/releases/download/v1.0.0/purrfetch-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "45ee06c3b6f75b7d4dc83174361a49ffde4540f75f6f4abfddd783f402c59aa1"
+      url "https://github.com/justin13888/purrfetch/releases/download/v1.0.1/purrfetch-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a9ddf12ee2e3c174bc097e64048263e30ee1d76b42ce0fa5b379d6d9fa6b044e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/justin13888/purrfetch/releases/download/v1.0.0/purrfetch-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "34560fb1f2d61469eb04164179a1a2dc00b8e21d0d7c5ec9cbb8300fd401f662"
+      url "https://github.com/justin13888/purrfetch/releases/download/v1.0.1/purrfetch-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "58095e50d73a702d3c64592742ff65fd6da38b55ff02f2d629e32f0fa7e51734"
     end
   end
   license "MIT"
