@@ -55,6 +55,13 @@ class Purr < Formula
 
     install_binary_aliases!
 
+    # purrfetch: cargo-dist bundles the man page + completions in the
+    # archive but installs only the binary; wire them into Homebrew here.
+    man1.install "purr.1"
+    bash_completion.install "completions/purr.bash" => "purr"
+    zsh_completion.install "completions/_purr"
+    fish_completion.install "completions/purr.fish"
+
     # Homebrew will automatically install these, so we don't need to do that
     doc_files = Dir["README.*", "readme.*", "LICENSE", "LICENSE.*", "CHANGELOG.*"]
     leftover_contents = Dir["*"] - doc_files
